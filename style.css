@@ -1,0 +1,158 @@
+/* global */
+
+/* fonts.google.com */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+
+/* box sizing */
+
+* {
+  box-sizing: border-box;
+}
+
+/* root variables */
+
+:root {
+  --lightblue: rgb(0, 153, 254);
+  --blue: rgb(0, 47, 255);
+  --gray: gray;
+}
+
+/* body */
+
+body {
+  color: black;
+  background-color: white;
+  font-family: "Roboto Condensed", serif;
+  margin: 0;
+}
+
+/* heading */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  line-height: 1.2;
+}
+/* paragraph */
+p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* link */
+a {
+  color: var(--lightblue);
+}
+a:hover,
+a:focus {
+  /* outline: none; */
+  color: rgb(255, 0, 255);
+}
+
+/* image */
+img {
+  max-width: 100%;
+  padding: 140px;
+}
+/* button */
+button {
+  cursor: pointer;
+  color: white;
+  background-color: var(--blue);
+  border: solid 3px var(--blue);
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-size: inherit;
+  font-family: inherit;
+}
+.container {
+  /* max-width: 70rem; */
+  /* padding-inline: 24px; */
+
+  width: min(100% - 48px, 70rem);
+
+  margin-inline: auto;
+  text-align: center;
+}
+
+/* -------------------- */
+
+/* header ----------- */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding-block: 20px;
+}
+#logo {
+  font-weight: bold;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+li:last-child a {
+  color: rgb(255, 255, 255);
+  background-color: var(--blue);
+  padding: 10px 16px;
+  border-radius: 10px;
+}
+
+li:last-child a:hover,
+li:last-child a:focus {
+  background-color: rgb(255, 0, 255);
+}
+
+/* Banner ----------------- */
+
+#banner {
+  background-color: var(--lightblue);
+  padding-block: 200px;
+
+  background-image: url(wall.jpeg);
+  background-size: cover;
+  background-repeat: repeat;
+  background: linear-gradient(120deg, rgb(233, 87, 167), rgb(2, 66, 2));
+}
+
+#banner .container {
+  text-align: center;
+}
+/* services ----------- */
+#services {
+  padding-block: 70px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  border: solid var(--gray) 1px;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex-basis: calc(33% - 20px);
+  flex-grow: 1;
+}
+.card i {
+  font-size: 30px;
+  color: var(--blue);
+}
+h2 {
+  border: solid rgb(255, 255, 255) 2px;
+  flex-basis: 100%;
+  text-align: center;
+}
